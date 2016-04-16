@@ -1,0 +1,34 @@
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font-family:sans-serif;
+}
+header {
+	width:100%;
+	background-color:green;
+	position:fixed;
+}
+header img, header nav {
+	display:inline-block;
+}
+header nav ul {
+	float:right;
+	background-color:red;
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:flex-end;
+}
+header nav ul li {
+	list-style-type:none;
+}
+
+
+
+
+
+
+
+
