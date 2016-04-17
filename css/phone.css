@@ -6,7 +6,7 @@ body {
 	font-family:sans-serif;
 }
 /* HEADER */
-header, footer {
+header {
 	width:100%;
 	background-color:green;
 	position:fixed;
@@ -55,6 +55,8 @@ header ul a:last-of-type {
 }
 /* SECTION */
 section {
+	overflow:auto;
+	font-size:80%;
 	margin:auto;
 	width:90vw;
 	padding-top:10%;
@@ -67,8 +69,30 @@ section h2 {
 section p {
 	padding:0.4em 0em;
 }
+/* ARTICLE */
+article {
+	padding:1em 0em;
+}
+article:nth-of-type(even) {
+	border-top:1px solid grey;
+	border-bottom:1px solid grey;
+}
+article:nth-of-type(odd) {
+	border:none;
+}
+article h2 {
+	font-size:1.4em;
+}
+article li {
+	list-style-type:none;
+}
+article li::before {
+	content:"- ";
+}
 /* FOOTER */
 footer {
+	width:100%;
+	background-color:green;
 	bottom:0;
 	color:white;
 	text-align:center;

@@ -13,4 +13,12 @@ $(document).ready(function() {
 			$("#navigation_toggle").addClass("inactive");
 		}
 	});
+	$("#logo").click(function() {
+		count--;
+		$("header ul").hide();
+	});
+	$("ul a").click(function() {
+		count--;
+		$("header ul").hide();
+	});
 });
